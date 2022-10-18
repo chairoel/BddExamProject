@@ -1,6 +1,7 @@
 package com.amrul.bdd.roseLover.ui.fragment.home
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -17,6 +18,8 @@ import com.amrul.bdd.roseLover.adapter.OnItemClickCallback
 import com.amrul.bdd.roseLover.data.Rose
 import com.amrul.bdd.roseLover.data.RosesData
 import com.amrul.bdd.roseLover.databinding.FragmentHomeBinding
+import com.amrul.bdd.roseLover.ui.activity.DetailRoseActivity
+import com.amrul.bdd.roseLover.util.Constant
 import com.amrul.bdd.roseLover.util.Util
 import kotlinx.android.synthetic.main.fragment_home.*
 import java.text.SimpleDateFormat
@@ -91,8 +94,13 @@ class HomeFragment : Fragment() {
         })
     }
 
-    private fun showSelectedHero(hero: Rose) {
-        Toast.makeText(context, "Kamu memilih " + hero.name, Toast.LENGTH_SHORT).show()
+    private fun showSelectedHero(rose: Rose) {
+//        Toast.makeText(context, "Kamu memilih " + rose.name, Toast.LENGTH_SHORT).show()
+        val detailIntent = Intent(context, DetailRoseActivity::class.java)
+        detailIntent.putExtra(Constant.ROSE_NAME, rose.name)
+        detailIntent.putExtra(Constant.ROSE_DETAIL, rose.detail)
+        detailIntent.putExtra(Constant.ROSE_COLOR, rose.color)
+        startActivity(detailIntent)
     }
 
 }
