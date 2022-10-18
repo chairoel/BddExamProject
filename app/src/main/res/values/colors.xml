@@ -7,4 +7,35 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="primary_color">@color/color_red2</color>
+    <color name="primary_light_color">@color/color_red5</color>
+    <color name="primary_dark_color">@color/color_red1</color>
+
+    <color name="secondary_color">#43a4c9</color>
+    <color name="secondary_light_color">#7bd5fc</color>
+    <color name="secondary_dark_color">#007598</color>
+
+    <color name="color_red">#EA0C0C</color>
+    <color name="color_red1">#af5353</color>
+    <color name="color_red2">#d07c7c</color>
+    <color name="color_red3">#df9191</color>
+    <color name="color_red4">#f4a8a8</color>
+    <color name="color_red5">#feb5b5</color>
+
+    <color name="background">#F5F5F5</color>
+    <color name="black_color">#161619</color>
+    <color name="white_color">#FFFFFFFF</color>
+
+    <color name="text_color_white">@color/white_color</color>
+    <color name="text_color1">#001b4f</color>
+    <color name="text_color2">#06417c</color>
+    <color name="gray_color">#838383</color>
+
+    <color name="card_faq">#DDECF3</color>
+    <color name="text_list">#1C389C</color>
+
+    <color name="line_grey">#C4C4C4</color>
+    <color name="line_grey2">#E8E8E8</color>
+
 </resources>
