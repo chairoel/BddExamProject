@@ -1,5 +1,60 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
-    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--    Default Margin setup-->
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+    <dimen name="activity_start_margin">24dp</dimen>
+    <dimen name="activity_end_margin">24dp</dimen>
+    <dimen name="activity_top_margin">24dp</dimen>
+    <dimen name="activity_bottom_margin">24dp</dimen>
+
+    <!--    Margin 16dp-->
+    <dimen name="activity_start_margin_16dp">16dp</dimen>
+    <dimen name="activity_end_margin_16dp">16dp</dimen>
+    <dimen name="activity_top_margin_16dp">16dp</dimen>
+    <dimen name="activity_bottom_margin_16dp">16dp</dimen>
+
+    <!--    Margin 8dp-->
+    <dimen name="activity_start_margin_8dp">8dp</dimen>
+    <dimen name="activity_end_margin_8dp">8dp</dimen>
+    <dimen name="activity_top_margin_8dp">8dp</dimen>
+    <dimen name="activity_bottom_margin_8dp">8dp</dimen>
+
+    <!--    Margin 32dp-->
+    <dimen name="activity_start_margin_32dp">32dp</dimen>
+    <dimen name="activity_end_margin_32dp">32dp</dimen>
+    <dimen name="activity_top_margin_32dp">32dp</dimen>
+    <dimen name="activity_bottom_margin_32dp">32dp</dimen>
+
+    <!--    Default Margin & Padding for Button-->
+    <dimen name="button_top_margin">24dp</dimen>
+    <dimen name="button_bottom_margin">16dp</dimen>
+    <dimen name="button_start_margin">24dp</dimen>
+    <dimen name="button_end_margin">24dp</dimen>
+    <dimen name="button_horizontal_margin">24dp</dimen>
+    <dimen name="button_horizontal_padding">24dp</dimen>
+
+    <!--    Padding-->
+    <dimen name="activity_padding_8dp">8dp</dimen>
+    <dimen name="activity_padding_12dp">12dp</dimen>
+    <dimen name="activity_padding_16dp">16dp</dimen>
+    <dimen name="activity_padding_24dp">24dp</dimen>
+    <dimen name="activity_padding_32dp">32dp</dimen>
+
+    <!--    Margin-->
+    <dimen name="activity_margin_0dp">0dp</dimen>
+    <dimen name="activity_margin_4dp">4dp</dimen>
+    <dimen name="activity_margin_8dp">8dp</dimen>
+    <dimen name="activity_margin_12dp">12dp</dimen>
+    <dimen name="activity_margin_16dp">16dp</dimen>
+    <dimen name="activity_margin_24dp">24dp</dimen>
+    <dimen name="activity_margin_32dp">32dp</dimen>
+
+    <!--    Tambahan-->
+    <dimen name="icon_width">120dp</dimen>
+    <dimen name="icon_height">120dp</dimen>
+    <dimen name="text_card_view">24sp</dimen>
+    <dimen name="text_header_list">24sp</dimen>
+    <dimen name="text_header_list2">20sp</dimen>
 </resources>
