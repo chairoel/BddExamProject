@@ -35,8 +35,7 @@ object RosesData {
         "Black Rose",
         "Talitha Rose",
         "Putri Rose",
-        "White Mega Rose",
-
+        "White Mega Rose"
     )
 
     private val roseDetails = arrayOf(
@@ -71,8 +70,42 @@ object RosesData {
         "Bunga yang satu tergolong bunga yang langka tidak seperti bunga mawar lainnya. Mawar hitam ini tumbuh di daerah Halferi. Saat ini mawar hitam spesies yang terancam punah. Hal ini dikarenakan sulitnya dalam penanaman bunga tersebut.\nBunga mawar hitam mempunyai makna lambang kebencian dan simbol misteri. Namun demikian bunga ini memiliki keindahan dan perlu dilestarikan.",
         "Bunga mawar talitha adalah salah satu jenis bunga potong dengan bunga ganda. Warna yang dimiliki mawar ini berwarna orange. Ukuran bunga mawar ini tidak jauh berbeda dengan bunga mawar pada umumnya. Kesegaran bunga mawar ini mampu bertahan kurang lebih 9 hari.",
         "Bunga mawar putrid temasuk golongan jenis bunga mawar potong dengan jenis ganda. Warna bunga mawar ini merah tua atau merah dark red. Bunga ini mempunyai aroma wangi lebih tinggi. Aroma wangi bunga putrid mampu bertahan kurang lebih 10 hari. Ukuran bunga putrid lebih besar dibandingkan dengan ukuran bunga talitha.",
-        "Bunga mawar mega putih merupakan jenis bunga yang mempunyai ukuran cukup besar. Uncup bunga ini mencapai 3 cm dan ketika mekar memiliki diameter 12 cm. Bunga ini memiliki batang yang kokoh sehingga kelopak bunganya bisa menopang di batangnya.",
+        "Bunga mawar mega putih merupakan jenis bunga yang mempunyai ukuran cukup besar. Uncup bunga ini mencapai 3 cm dan ketika mekar memiliki diameter 12 cm. Bunga ini memiliki batang yang kokoh sehingga kelopak bunganya bisa menopang di batangnya."
+    )
 
+    private val roseColors = arrayOf(
+        "Merah",
+        "Kuning",
+        "Pink",
+        "Putih",
+        "Orange",
+        "Biru",
+        "Hijau",
+        "Merah, Putih",
+        "Pink",
+        "Putih",
+        "Pink",
+        "Pink, Putih",
+        "Merah",
+        "Beragam",
+        "Merah",
+        "Merah",
+        "Pink",
+        "Merah, Putih, Ungu",
+        "Pink",
+        "Merah, Putih",
+        "Ungu",
+        "Putih",
+        "Merah",
+        "Merah",
+        "Merah",
+        "Merah",
+        "Merah, Pink",
+        "Pink, Putih",
+        "Hitam",
+        "Orange",
+        "Merah",
+        "Putih"
     )
 
     private val heroesImages = intArrayOf(
@@ -117,6 +150,7 @@ object RosesData {
                 val hero = Rose()
                 hero.name = roseNames[position]
                 hero.detail = roseDetails[position]
+                hero.color = roseColors[position]
                 hero.photo = heroesImages[position]
                 list.add(hero)
             }
