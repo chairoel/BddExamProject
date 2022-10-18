@@ -18,13 +18,14 @@
             android:id="@+id/rlHomeHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/activity_padding_8dp"
             android:paddingHorizontal="@dimen/activity_padding_16dp">
 
             <ImageView
                 android:id="@+id/ivDanoneView"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:src="@mipmap/ic_launcher"
+                android:src="@mipmap/ic_launcher_round"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -44,16 +45,16 @@
                     style="@style/TextViewItem.red.dark"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Asterix"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:textStyle="bold"
+                    tools:text="Asterix" />
 
                 <TextView
                     android:id="@+id/tvDateNow"
                     style="@style/TextViewItem.gray"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="27 feb 2021" />
+                    tools:text="27 feb 2021" />
             </LinearLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 

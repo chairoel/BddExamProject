@@ -1,5 +1,6 @@
 package com.amrul.bdd.roseLover.ui.fragment.home
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -10,11 +11,18 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.amrul.bdd.roseLover.R
 import com.amrul.bdd.roseLover.adapter.ListRoseAdapter
 import com.amrul.bdd.roseLover.adapter.OnItemClickCallback
 import com.amrul.bdd.roseLover.data.Rose
 import com.amrul.bdd.roseLover.data.RosesData
 import com.amrul.bdd.roseLover.databinding.FragmentHomeBinding
+import com.amrul.bdd.roseLover.util.Util
+import kotlinx.android.synthetic.main.fragment_home.*
+import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.collections.ArrayList
+
 
 class HomeFragment : Fragment() {
 
@@ -22,6 +30,7 @@ class HomeFragment : Fragment() {
     private var list: ArrayList<Rose> = arrayListOf()
     private val listRoseAdapter: ListRoseAdapter = ListRoseAdapter(ArrayList())
     private lateinit var rvRose: RecyclerView
+    private lateinit var name: TextView
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -46,6 +55,24 @@ class HomeFragment : Fragment() {
         list = RosesData.listData
         showRecyclerList(list)
         return root
+    }
+
+    override fun onResume() {
+        super.onResume()
+        setAppBar()
+    }
+    @SuppressLint("SimpleDateFormat")
+    private fun setAppBar() {
+        val nameProfile: String = "Chairul Amri"
+        if (nameProfile != null) {
+            tvProfileName.text = String.format("Hello, %s!", Util.toCamelCase(nameProfile))
+        } else {
+            tvProfileName.text = getString(R.string.dummy_name)
+        }
+
+        val dateNow = Date()
+        val simpleDateFormat = SimpleDateFormat("E, MMM dd yyyy")
+        tvDateNow.text = simpleDateFormat.format(dateNow)
     }
 
     override fun onDestroyView() {

@@ -3,4 +3,5 @@
     <string name="title_home">Home</string>
     <string name="title_knowledge">Knowledge</string>
     <string name="title_profile">Profile</string>
+    <string name="dummy_name">Asterix</string>
 </resources>
