@@ -7,4 +7,185 @@
     <string name="accent">Rose Color :</string>
     <string name="dummy_name">Asterix</string>
     <string name="dummy_color">Merah</string>
+
+    <string name="rose_definition">Bunga mawar adalah suatu jenis tanaman hias yang biasa dipakai untuk lambang
+        keromantisan. Banyak sekali beragam bunga mawar yang ada di Dunia. Warna indah yang dimiliki bunga mawar
+        menjadikan banyak digemari oleh semua kalangan.
+        \nMawar tumbuh subur di daerah beriklim sedang walaupun kultivar yang merupakan hasil metode penyambungan.
+        Sehingga dapat tumbuh di daerah beriklim tropis hingga subtropis.
+    </string>
+
+    <!--In Pot-->
+    <string name="pot_rose_cultivation_intro">Untuk anda yang tidak mempunyai lahan kebun, anda bisa mencoba menanam
+        bunga mawar didalam pot. Berikut ini langkah-langkah cara budidaya bunga mawar dipot unuk hasil yang maksimal.
+    </string>
+
+    <string name="pot_rose_growing_media">Penanaman dilakukan secara permanen di kebun atau di pot.
+        Tanaman mawar cocok pada tanah liat yang mengandung pasir. Kandungan tanah liat 20-30%, subur, gembur,
+        banyak bahanorganik, aerasi, dan draenase baik.
+        \nDerajat keasaman tanah yang ideal PH 5.5-7.0. pada tanah asam (PH 5.0) perlu pengapuran kapur Dolomit, Calcit Ataupun Zeagro.
+        \nPemberian kapur bertujuan untuk menaikkan PH tanah, menambah unsure-unsur Ca dan Mg. memperbaiki mikroganisme, memperbaiki bintil-bintil akar dan mengurangi keracunan.
+    </string>
+
+    <string name="pot_height_cultivation">
+        Ketinggian juga sangat mempengaruhi pertumbuhan pada bunga mawar. Berikut standart ketinggian yang baik.
+    </string>
+
+    <string name="pot_height_cultivation_option1">
+        Ketinggian 560-800 mdpl, suhu udara minimum 16-28 derajat Celsius. Dan maksimum 28-30 derajat Celsius.
+    </string>
+
+    <string name="pot_height_cultivation_option2">
+        Ketinggian 1100 mdpl, suhu minimum 14-16 derajat Celsius, maksimum 24-27 derajat Celsius.
+    </string>
+
+    <string name="pot_height_cultivation_option3">
+        Ketinggian 1400 mdpl, suhu minimum 13.7-15.6 derajat Celsius. Dan maksimum 19.5-22.6 derajat Celsius.
+    </string>
+
+    <string name="pot_height_cultivation_line2">
+        Di daerah seperti Indonesia seperti Indonesia. Tanaman bunga mawart akan tumbuh dan produktif berbunga dengan baik.
+    </string>
+
+    <string name="pot_rose_cultivation">Untuk menanam mawar di media pot. Pilihlah pot yang terbuat dari tembikar,
+        tanah liat, maupun semen cor. Jika pot berbahan plastic sebaikya pilih nya berlubang bertujuan sebagai sirkulasi udara.
+    </string>
+
+    <string name="pot_rose_cultivation_option1">
+        Isilah pot dengan beberapa campuran tanah, pasir, serta pupuk kandang yang sudah difermentasi.
+    </string>
+
+    <string name="pot_rose_cultivation_option2">
+        Tambahkan pecahan bata ditaruh didasar pot. Bertujuan agar saat penyiraman air bisa keluar melalui dasar pot.
+        Dan dapat mempermudah pemindahan tanaman pot. Dengan demikian akar akan terhindar dari pembusukan.
+    </string>
+
+    <string name="pot_rose_cultivation_option3">
+        Gunakan bibit yang sudah siap tanam. Tetapi juga bisa menggunakan hasil stek sendiri.
+    </string>
+
+    <string name="pot_rose_cultivation_option4">
+        Setelah bibit ditanam, urug dengan campuran media tanam. Kemudian tekan tanah bagian tepi batang secara kuat.
+    </string>
+
+    <string name="pot_rose_cultivation_option5">
+        Sirami dengan air secukupnya. Taruh ditempat yang mendapatkan sinar matahari secara penuh.
+    </string>
+
+    <string name="pot_rose_cultivation_option6">
+        Budidaya bunga mawar dengan media pot juga memerlukan pergantian media tanam serta memotong akar setia
+        1 atau 2 tahun sekali agar bunga mawar kamu tetap terjaga pertumbuhan dan kesuburannya.
+    </string>
+
+    <string name="pot_rose_cultivation_option7">
+        Untuk mencegah pembusukan akar yang disebabkan oleh berbagai bakteri penyakit
+        yang dapat menyerarang tanaman mawar, penyiraman dapat ditmbahkan denga larutan asam bensoat pada air tersebut.
+    </string>
+
+    <!--In Garden-->
+    <string name="garden_rose_cultivation_intro">Untuk mengembangbiakkan secara cepat,
+        bunga ini dapat ditanam di ladang maupun kebun. Berikut ini cara budidaya bunga mawar di kebun untuk hasil yang maksimal.
+    </string>
+
+    <string name="garden_land_selection">Siapkan lahan yang mau ditanami mawar. Gunakan tanah yang gembur dan mendapat sinar matahari secara langsung. Bersihkan lokasi kebun dari rumput-rumput liar dan batu kerikil.
+        \nCangkul atau bajak tanah sedalam kurang lebih 30 cm hingga gembur. Setelah dibajak biarkan tanah selama 15-30 hari agar matang dan bebas dari gas-gas beracun.
+        \nBuatlah bedengan-bedengan dengan ukuran lebar 100-120 cm, tinggi 30 cm, jarak antara bedengan 30-40 cm dan panjangnya tergantung keadaan lahan. Bila akan dirancang taman yang asimetris, maka penyiapan lahannya bisa dibuat bentuk-bentuk yang kamu inginkan.
+    </string>
+
+    <string name="garden_fertilization">
+        Pupuklah kebun dengan pupuk organic (kompos/kandang) 20-30 ton per hektar atau Super TW Plus 4-5 ton per hektar. Berikan pupuk dengan menyebar dan mencampur secara merata. Pemberian pupuk organik dengan memasukkan ke dalam lubang tanam rata-rata 1-2 kg per tanaman.
+    </string>
+
+    <string name="garden_food_pattern">Buatlah lubang tanam pada jarak 60×60 cm atau 70×70 cm, tergantung jenis mawar dan kesuburan tanahnya.
+        \nPembuatan lubang diperlukan sekop melengkung supaya diperoleh lubang berbentuk silindris. Ukuran lubang 45x45x45 cm. kedalaman yang baik yaitu bila tanaman diletakkan dalam lubang, kedudukan bagian percabangan utama letaknya sejajar dengan permukaan tanah.
+        \nAkar mawar tidak bisa menembus terlalu dalam pada bagian tanah. maka cangkul cukup berkedalaman 45-55 cm.
+        \nPada saat membuat lubang di permukaan (top soil) maka dikumpulkan secara terpisah. Itu nanti digunakan untuk menutup lubang kembali. Bila daerah itu tertutup rumput, maka ambil bentuk lempengan-lempengan dan letakkan di tempat teduh. Digunakan sebagai pupuk maka masukkan kedalam lubang.
+        \nLetakkanlah lempengan rumput secara terbalik. Campur top soil dan pupuk organic dengan perbandingan 4 bagian tanah dan 1 bagian organik. Lubang diisi dengan top soil dan bahan organic sampai membentuk gundukan.
+    </string>
+
+    <string name="garden_rose_plant">
+        Gunakan waktu yang cocok untuk menanam mawar. untuk mempercepat pertumbuhan maka lakukan pada musim hujan. Namun jika air memadai maka bisa lakukan sepanjang tahun. Mawar yang ditanam berupa bibit cabutan (tanpa tanah) dan bibit yang berasal dari polybag.
+    </string>
+
+    <string name="garden_planting_rose_seed_option1">
+        Gunakan bibit tanaman mawar dari kebun pembibitan secara cabutan.
+    </string>
+
+    <string name="garden_planting_rose_seed_option2">
+        Potong sebagian batang dan cabng-cabangnya, sisakan 20-25 cm agar habitus tananman menjadi perdu (pendek).
+    </string>
+
+    <string name="garden_planting_rose_seed_option3">
+        Potong sebagian akar-akarnya dengan alat yang steril.
+    </string>
+
+    <string name="garden_planting_rose_seed_option4">
+        Rendam bibit mawar dalam air atau larutan Zat Pengatur Tumbuh (ZPT) seperti Dekamon 1-2 cc/liter selama 15-30 menit.
+    </string>
+
+    <string name="garden_planting_rose_seed_option5">
+        Tanamlah bibit di tengah-tengah lubang dan akarnya diatur menyebar kesemua arah. Urug dengan tanah hingga batas pangkal leher batang.
+    </string>
+
+    <string name="garden_planting_rose_seed_option6">
+        Padatkan tanah di sekeliling batang tanaman mawar. Lakukan secara perlahan agar akar bisa berkonrtaksi dengan tanah langsung.
+    </string>
+
+    <string name="garden_planting_rose_seed_option7">
+        Siram tanah di sekeliling pekarangan tanaman hingga basah.
+    </string>
+
+    <string name="garden_planting_rose_seed_option8">
+        Pasang naungan sementara dari anyaman bamboo/bahan lain untuk melindungi tananaman mawar dari teriknya sinar matahari sore hari.
+    </string>
+
+    <string name="garden_rose_sprinkling">
+        Pada fase awal pertumbuhan (sekitar umur 1-2 bulan setelah tanam), maka lakukan perairi dengan air secara rutin. Pengairan bisa dilakukan pada padi dan sore hari bisa menggunakan alat bantu emrat (gembor).
+    </string>
+
+    <string name="garden_pest">
+        Ada salah satu faktor yang bisa menghambat perkembangan budidaya bunga wawar, diantaranya adalah hama. Untuk itu, kita akan membahas tentang hama dan bagaimana cara mengatasinya.
+    </string>
+
+    <string name="garden_pest_flea">
+        Kutu daun kecil dan panjangnya kurang lebih 0,6 mm. Berwarna hijau, kadang-kadang tidak bersayap. Menyerang pucuk, seringkali menempel pada ranting dan kuncup bunga.
+        \nKutu daun menghisap cairan (sel) tanaman, sehingga menimbulkan gejala abnormal. sehingga pada daun akan mengalami keriting. Dan sering meninggalkan madu manis yang menempel pada permukaan daun, sehingga menjadi penyebab penyakit embun jelaga (Capnodium sp).
+        \nUntuk menjaga sanitasi kebun maka semprot dengan insektisida Desis 2,5 EC atau Buldok 25 EC, Confidr 200LC, Curacron 500 EC dan Fastac 15 EC pada konsentrasi yang dianjurkan.
+    </string>
+
+    <string name="garden_pest_bee_intro">
+        Ada tiga jenis kumbang penyerang tanaman mawar:
+    </string>
+
+    <string name="garden_pest_bee_option1">
+        Kumbang Chafer (Macrodactylis subspinosus), Fuller (Autoserica castanca) dan Curculio (Rhyncite bicolor).
+    </string>
+
+    <string name="garden_pest_bee_option2">
+        Kumbang Chafer berwarna coklat kekuning-kuningan dan kebu-abuan dengan panjang tubuh sekitar 10-12 mm.
+    </string>
+
+    <string name="garden_pest_bee_option3">
+        Kumbang Curculio berwarna merah bergaris hitam kurang lebih 5 mm.
+    </string>
+
+    <string name="garden_pest_bee_line2">
+        Hama itu memakan daun, tangkai dan kuntum bunga. Sehingga menyebabkan bolong-bolong pada bagian yang diserang. Sedangkan larvanya sering memakan perakaran tanaman.
+        \nUntuk mengumpulkan dan memusnahkan hama tersebut maka semprotlah dengan insektisida Hostathion 40 EC, Desis 2,5 EC, Ambush 2 EC, Elsan 60 EC atau yang lainnya pada konsentrasi yang dianjurkan.
+    </string>
+
+    <string name="garden_pest_hairy_snail">
+        Tubuh siput berbulu berwarna putih kehijau-hijauan dengan panjang kurang lebih 12 mm dan ditutupi bulu-bulu kasar. Hama ini menyerang tanaman dengan cara memakan daun sebelah bawah yang menyebabkan daun berlubang tinggal tulang daun.
+        \nUntuk merontokkan kepompong yang menempel pada tanaman maka semprotkan isektisida Bresan 60.
+    </string>
+
+    <string name="garden_pest_mite">
+        Tungai memilki warna kulit merah atau hijau maupun kuning. Berkembang biak dengan cepat apabila cuaca lembab dan panas, serta sirkulasi udara kurang baik. Hama ini menyerang dengan cara menghisap cairan (sel) tanaman pada bagian daun atau pucuk, sehingga menyebabkan titik-titik merah.
+        \nUntuk menindas hama tersebut maka lakukan penyemprotan dengan insektisida seperti Omite 570 EC atau Mitac 200 EC, Meothrin 50 EC atau yang lainnya pada konsentasi yang dianjurkan.
+    </string>
+
+    <string name="garden_pest_thrips">
+        Hama ini berukuran sangat kecil, kurang lebih 1 mm. berwarna kuning-oranye atau kuning kecokelat-cokelatan. Thrips merusak atau menghisap cairan (sel) tanaman, terutama bunga, daun dan cabang. Menyenangi bunga mawar bewarna kuning atau yang bewarna terang lainnya.
+        \nuntuk itu lakukan Pemangkasan bagian tanaman yang terserang berat dan semprotlah dengan insektisida Merusol 50 WP, Tokuthion 500 EC, Pegasus 500 SC, Decis 2,5 EC atau yang lainnya pada konsentrasi yang dianjurkan.
+    </string>
 </resources>
