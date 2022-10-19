@@ -97,9 +97,10 @@ class HomeFragment : Fragment() {
     private fun showSelectedHero(rose: Rose) {
 //        Toast.makeText(context, "Kamu memilih " + rose.name, Toast.LENGTH_SHORT).show()
         val detailIntent = Intent(context, DetailRoseActivity::class.java)
-        detailIntent.putExtra(Constant.ROSE_NAME, rose.name)
-        detailIntent.putExtra(Constant.ROSE_DETAIL, rose.detail)
-        detailIntent.putExtra(Constant.ROSE_COLOR, rose.color)
+//        detailIntent.putExtra(Constant.ROSE_NAME, rose.name)
+//        detailIntent.putExtra(Constant.ROSE_DETAIL, rose.detail)
+//        detailIntent.putExtra(Constant.ROSE_COLOR, rose.color)
+        detailIntent.putExtra(Constant.ROSE_ITEM, rose)
         startActivity(detailIntent)
     }
 
