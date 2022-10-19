@@ -22,7 +22,7 @@
             android:paddingHorizontal="@dimen/activity_padding_16dp">
 
             <ImageView
-                android:id="@+id/ivDanoneView"
+                android:id="@+id/ivRoseIcon"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:src="@mipmap/ic_launcher_round"
@@ -38,7 +38,7 @@
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/ivDanoneView">
+                app:layout_constraintStart_toEndOf="@+id/ivRoseIcon">
 
                 <TextView
                     android:id="@+id/tvProfileName"
