@@ -23,15 +23,15 @@ class KnowledgeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val knowledgeViewModel =
-            ViewModelProvider(this).get(KnowledgeViewModel::class.java)
+            ViewModelProvider(this)[KnowledgeViewModel::class.java]
 
         _binding = FragmentKnowledgeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
-        knowledgeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
+//        val textView: TextView = binding.textDashboard
+//        knowledgeViewModel.text.observe(viewLifecycleOwner) {
+//            textView.text = it
+//        }
         return root
     }
 
