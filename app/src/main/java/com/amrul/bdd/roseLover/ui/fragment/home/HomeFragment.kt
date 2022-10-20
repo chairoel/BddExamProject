@@ -31,7 +31,7 @@ class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private var list: ArrayList<Rose> = arrayListOf()
-    private val listRoseAdapter: ListRoseAdapter = ListRoseAdapter(ArrayList())
+    private lateinit var listRoseAdapter: ListRoseAdapter;
     private lateinit var rvRose: RecyclerView
     private lateinit var name: TextView
 
@@ -56,6 +56,12 @@ class HomeFragment : Fragment() {
         rvRose = binding.rvRoses
         rvRose.setHasFixedSize(true)
         list = RosesData.listData
+        listRoseAdapter = activity?.let { context?.let { it1 ->
+            ListRoseAdapter(it, ArrayList(),
+                it1
+            )
+        } }!!
+
         showRecyclerList(list)
         return root
     }
