@@ -3,6 +3,16 @@
     <string name="title_home">Home</string>
     <string name="title_knowledge">Knowledge</string>
     <string name="title_profile">Profile</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="forgot_password">Lupa Password?</string>
+    <string name="username">Chairul</string>
+    <string name="password">1234</string>
+
     <string name="desc">Description :</string>
     <string name="accent">Rose Color :</string>
     <string name="dummy_name">Asterix</string>
