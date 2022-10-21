@@ -47,10 +47,6 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-//        val textView: TextView = binding.textHome
-//        homeViewModel.text.observe(viewLifecycleOwner) {
-//            textView.text = it
-//        }
         rvRose = binding.rvRoses
         rvRose.setHasFixedSize(true)
         list = RosesData.listData
@@ -64,17 +60,15 @@ class HomeFragment : Fragment() {
 
     override fun onResume() {
         super.onResume()
-        setAppBar()
+        val nameProfile = activity?.intent?.getStringExtra(Constant.USERNAME_LOGIN)
+        if (nameProfile != null) {
+            setAppBar(nameProfile)
+        }
     }
 
     @SuppressLint("SimpleDateFormat")
-    private fun setAppBar() {
-        val nameProfile = activity?.intent?.getStringExtra(Constant.USERNAME_LOGIN)
-        if (nameProfile != null) {
-            tvProfileName.text = String.format("Hello, %s!", Util.toCamelCase(nameProfile))
-        } else {
-            tvProfileName.text = getString(R.string.dummy_name)
-        }
+    private fun setAppBar(nameProfile: String) {
+        tvProfileName.text = String.format("Hello, %s!", Util.toCamelCase(nameProfile))
 
         val dateNow = Date()
         val simpleDateFormat = SimpleDateFormat("E, MMM dd yyyy")
