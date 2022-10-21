@@ -117,4 +117,30 @@
         <item name="android:minHeight">48dp</item>
     </style>
 
+    <!--Card View Item Custom-->
+    <style name="CardViewCustom">
+        <item name="android:layout_width">match_parent</item>
+        <!--        <item name="android:layout_height">150dp</item>-->
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginEnd">24dp</item>
+        <item name="android:layout_marginTop">6dp</item>
+        <item name="android:layout_marginBottom">6dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:longClickable">true</item>
+        <item name="cardCornerRadius">8dp</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardBackgroundColor">@color/white_color</item>
+    </style>
+
+    <style name="CardViewCustom.Select" parent="CardViewCustom">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/activity_start_margin_16dp</item>
+        <item name="android:layout_marginEnd">@dimen/activity_end_margin_16dp</item>
+        <item name="android:layout_marginTop">@dimen/activity_margin_8dp</item>
+        <item name="android:layout_marginBottom">@dimen/activity_margin_0dp</item>
+    </style>
 </resources>

@@ -32,6 +32,15 @@
         Sehingga dapat tumbuh di daerah beriklim tropis hingga subtropis.
     </string>
 
+    <string name="characteristics_roses">
+        Bunga mawar sebenarnya mempunyai banyak ciri khusus akan tetapi disini saya akan menjelaskan secara umum.
+        \nBatang yang dimiliki pohon mawar mempunyai banyak duri berwarna hijau.
+        Warna yang dimiliki bunga mawar meliputi putih, merah muda, kuning, dan biru.
+        Bunga ini menghasilkan buah agregat (berkembang dari satu bunga dengan banyak putik).
+        Perkembang putik menjadi satu buah tunggal.
+        Sedangkan buah tunggal dibungkus daging buah pada bagian luar.
+    </string>
+
     <!--In Pot-->
     <string name="pot_rose_cultivation_intro">Untuk anda yang tidak mempunyai lahan kebun, anda bisa mencoba menanam
         bunga mawar didalam pot. Berikut ini langkah-langkah cara budidaya bunga mawar dipot unuk hasil yang maksimal.
