@@ -38,6 +38,7 @@
         <item name="android:textColor">@color/gray_color</item>
     </style>
 
+    <!--Button Back Circle-->
     <style name="ButtonBackCircle" parent="Widget.MaterialComponents.ExtendedFloatingActionButton">
         <item name="android:backgroundTint">@color/white_color</item>
         <item name="android:clickable">true</item>
@@ -55,5 +56,50 @@
         <item name="iconTint">@color/black_color</item>
     </style>
 
+    <!--Text Input Layout Custom-->
+    <style name="TextInputLayoutCustom" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/activity_start_margin</item>
+        <item name="android:layout_marginEnd">@dimen/activity_end_margin</item>
+        <item name="android:layout_marginTop">@dimen/activity_top_margin_16dp</item>
+    </style>
+
+    <style name="TextInputLayoutCustom.HelperText" parent="TextInputLayoutCustom">
+        <item name="helperTextEnabled">true</item>
+        <item name="helperTextTextColor">@color/color_red</item>
+    </style>
+
+    <style name="TextInputLayoutCustom.HelperText.Counter" parent="TextInputLayoutCustom.HelperText">
+        <item name="counterEnabled">true</item>
+    </style>
+
+    <style name="TextInputLayoutCustom.HelperText.DropDownMenu" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">@dimen/activity_start_margin</item>
+        <item name="android:layout_marginEnd">@dimen/activity_end_margin</item>
+        <item name="android:layout_marginTop">@dimen/activity_top_margin_16dp</item>
+        <item name="helperTextEnabled">true</item>
+        <item name="helperTextTextColor">@color/color_red</item>
+    </style>
+
+    <style name="TextInputLayoutCustom.HelperText.Icon" parent="TextInputLayoutCustom">
+        <item name="helperTextEnabled">true</item>
+        <item name="helperTextTextColor">@color/color_red</item>
+    </style>
+
+    <!--Text Input Edit Text Custom-->
+    <style name="TextInputEditTextCustom">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="TextInputEditTextCustom.Disable" parent="TextInputEditTextCustom">
+        <item name="android:editable">false</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:inputType">none</item>
+    </style>
 
 </resources>
