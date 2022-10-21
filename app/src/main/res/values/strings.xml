@@ -18,6 +18,7 @@
     <string name="name2">Bdd 2022</string>
 
     <string name="password">test1234</string>
+    <string name="colon">:</string>
 
     <string name="desc">Description :</string>
     <string name="accent">Rose Color :</string>
@@ -206,4 +207,21 @@
     </string>
     <string name="login">Login</string>
     <string name="check_login_data"><![CDATA[Check Your Username & Password?]]></string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="place_birth">Tempat Lahir</string>
+    <string name="date_birth">Tanggal Lahir</string>
+    <string name="gender">Jenis Kelamin</string>
+    <string name="address">Alamat</string>
+    <string name="education">Pendidikan</string>
+    <string name="email">Email</string>
+
+    <string name="full_name_data">@string/name</string>
+    <string name="place_birth_data">Lubuk Alung</string>
+    <string name="date_birth_data">26 Oktober 1996</string>
+    <string name="gender_data">Laki-laki</string>
+    <string name="address_data">Kp. Pisangan Rt.006 Rw.011, Kel.Penggilingan, Kec.Cakung, Jakarta Timur, DKI Jakarta, 13940</string>
+    <string name="education_data">D3 Teknik Elektronika Industri Politeknik Negeri Jakarta</string>
+    <string name="email_data">chairul.amri2610@gmail.com</string>
+    <string name="bio_data">Biodata</string>
+    <string name="social_media">Sosial Media</string>
 </resources>
