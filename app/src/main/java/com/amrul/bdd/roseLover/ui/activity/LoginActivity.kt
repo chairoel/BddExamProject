@@ -20,9 +20,12 @@ class LoginActivity : AppCompatActivity() {
         Util.blurBackground(this, blurViewLogin, 10f)
 
         tvCheckMyLoginData.setOnClickListener {
-            val message = "Username1: ${resources.getString(R.string.username)}" + "\nUsername2: ${
-                resources.getString(R.string.username2)
-            }" + "\nPassword: ${resources.getString(R.string.password)}"
+//            val message = "Username1: ${resources.getString(R.string.username)}" + "\nUsername2: ${
+//                resources.getString(R.string.username2)
+//            }" + "\nPassword: ${resources.getString(R.string.password)}"
+
+            val message = "Username: ${resources.getString(R.string.username)}" +
+                    "\nPassword: ${resources.getString(R.string.password)}"
             MaterialAlertDialogBuilder(this)
                 .setTitle("Informasi Login")
                 .setMessage(message)
