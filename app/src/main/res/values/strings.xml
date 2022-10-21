@@ -205,4 +205,5 @@
         \nuntuk itu lakukan Pemangkasan bagian tanaman yang terserang berat dan semprotlah dengan insektisida Merusol 50 WP, Tokuthion 500 EC, Pegasus 500 SC, Decis 2,5 EC atau yang lainnya pada konsentrasi yang dianjurkan.
     </string>
     <string name="login">Login</string>
+    <string name="check_login_data"><![CDATA[Check Your Username & Password?]]></string>
 </resources>

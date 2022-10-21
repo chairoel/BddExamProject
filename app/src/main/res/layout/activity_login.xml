@@ -27,12 +27,12 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/login"
-            android:paddingHorizontal="@dimen/activity_padding_24dp"
-            android:textColor="@color/white_color"
             android:fontFamily="@font/poppins"
-            android:textStyle="bold"
-            android:textSize="40sp" />
+            android:paddingHorizontal="@dimen/activity_padding_24dp"
+            android:text="@string/login"
+            android:textColor="@color/white_color"
+            android:textSize="40sp"
+            android:textStyle="bold" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
@@ -122,6 +122,17 @@
                         android:text="@string/login"
                         android:textAllCaps="false"
                         android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvCheckMyLoginData"
+                        style="@style/TextViewItem.white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/activity_horizontal_margin"
+                        android:layout_marginBottom="@dimen/activity_bottom_margin_16dp"
+                        android:text="@string/check_login_data"
+                        android:textSize="14sp"
                         android:textStyle="bold" />
 
                 </LinearLayout>
