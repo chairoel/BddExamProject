@@ -29,20 +29,18 @@ object Util {
         return sb.toString()
     }
 
-    fun blurBackground(activity: Activity, blurView: BlurView, context:Context) {
-        val radius = 20f;
-
+    fun blurBackground(activity: Activity, blurView: BlurView, radius: Float) {
         val decorView: View = activity.window.decorView
         // ViewGroup you want to start blur from. Choose root as close to BlurView in hierarchy as possible.
-        val rootView: ViewGroup = decorView.findViewById(android.R.id.content);
+        val rootView: ViewGroup = decorView.findViewById(android.R.id.content)
 
         // Optional:
         // Set drawable to draw in the beginning of each blurred frame.
         // Can be used in case your layout has a lot of transparent space and your content
         // gets a too low alpha value after blur is applied.
-        val windowBackground: Drawable = decorView.background;
+        val windowBackground: Drawable = decorView.background
 
-        blurView.setupWith(rootView, RenderScriptBlur(context)) // or RenderEffectBlur
+        blurView.setupWith(rootView, RenderScriptBlur(activity)) // or RenderEffectBlur
             .setFrameClearDrawable(windowBackground) // Optional
             .setBlurRadius(radius)
     }

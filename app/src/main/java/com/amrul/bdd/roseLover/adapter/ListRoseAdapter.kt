@@ -18,8 +18,7 @@ import eightbitlab.com.blurview.BlurView
 
 class ListRoseAdapter(
     private var activity: Activity,
-    private var listRose: ArrayList<Rose>,
-    private var context: Context
+    private var listRose: ArrayList<Rose>
 ) : RecyclerView.Adapter<ListRoseAdapter.ListViewHolder>() {
 
     private lateinit var onItemClickCallback: OnItemClickCallback
@@ -50,7 +49,7 @@ class ListRoseAdapter(
 //            holder.nameRose.setTextColor(ContextCompat.getColor(context,R.color.color_red1))
 //        }
 
-        Util.blurBackground(activity, holder.blurView, context);
+        Util.blurBackground(activity, holder.blurView, 20f)
     }
 
     override fun getItemCount(): Int {
@@ -58,7 +57,7 @@ class ListRoseAdapter(
     }
 
     fun getItem(index: Int): Rose {
-        return listRose[index];
+        return listRose[index]
     }
 
     fun getItems(): List<Rose?> {

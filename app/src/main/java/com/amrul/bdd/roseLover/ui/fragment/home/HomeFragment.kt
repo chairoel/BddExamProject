@@ -31,7 +31,7 @@ class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private var list: ArrayList<Rose> = arrayListOf()
-    private lateinit var listRoseAdapter: ListRoseAdapter;
+    private lateinit var listRoseAdapter: ListRoseAdapter
     private lateinit var rvRose: RecyclerView
     private lateinit var name: TextView
 
@@ -56,11 +56,9 @@ class HomeFragment : Fragment() {
         rvRose = binding.rvRoses
         rvRose.setHasFixedSize(true)
         list = RosesData.listData
-        listRoseAdapter = activity?.let { context?.let { it1 ->
-            ListRoseAdapter(it, ArrayList(),
-                it1
-            )
-        } }!!
+        listRoseAdapter = activity?.let {
+            ListRoseAdapter(it, ArrayList())
+        }!!
 
         showRecyclerList(list)
         return root
@@ -72,7 +70,8 @@ class HomeFragment : Fragment() {
     }
     @SuppressLint("SimpleDateFormat")
     private fun setAppBar() {
-        val nameProfile: String = "Chairul Amri"
+        val nameProfile = activity?.intent?.getStringExtra("HA")
+//        val nameProfile: String = "Chairul Amri"
         if (nameProfile != null) {
             tvProfileName.text = String.format("Hello, %s!", Util.toCamelCase(nameProfile))
         } else {
