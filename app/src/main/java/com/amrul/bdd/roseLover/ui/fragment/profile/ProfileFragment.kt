@@ -1,13 +1,21 @@
 package com.amrul.bdd.roseLover.ui.fragment.profile
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
+import androidx.cardview.widget.CardView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.amrul.bdd.roseLover.R
 import com.amrul.bdd.roseLover.databinding.FragmentProfileBinding
+import com.amrul.bdd.roseLover.ui.activity.DetailRoseActivity
+import com.amrul.bdd.roseLover.ui.activity.ProfileActivity
+import com.amrul.bdd.roseLover.util.Constant
+import kotlinx.android.synthetic.main.fragment_profile.*
 
 class ProfileFragment : Fragment() {
 
@@ -23,7 +31,7 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val profileViewModel =
-            ViewModelProvider(this).get(ProfileViewModel::class.java)
+            ViewModelProvider(this)[ProfileViewModel::class.java]
 
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
         val root: View = binding.root
@@ -33,6 +41,18 @@ class ProfileFragment : Fragment() {
 //            textView.text = it
 //        }
         return root
+    }
+
+    override fun onResume() {
+        super.onResume()
+        setUI()
+    }
+
+    private fun setUI() {
+        cvProfile.setOnClickListener {
+            startActivity(Intent(context, ProfileActivity::class.java))
+        }
+        tvProfileNameF.text = resources.getString(R.string.name)
     }
 
     override fun onDestroyView() {
