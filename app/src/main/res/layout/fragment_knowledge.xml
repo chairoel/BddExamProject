@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="@color/background"
+    android:paddingBottom="?attr/actionBarSize"
     tools:context=".ui.fragment.knowledge.KnowledgeFragment">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -18,8 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingVertical="@dimen/activity_padding_8dp"
-            android:paddingHorizontal="@dimen/activity_padding_24dp">
+            android:paddingHorizontal="@dimen/activity_padding_24dp"
+            android:paddingVertical="@dimen/activity_padding_8dp">
 
             <TextView
                 android:id="@+id/ivTitle"
@@ -29,9 +31,138 @@
                 android:gravity="center_vertical"
                 android:text="@string/title_knowledge"
                 android:textSize="24sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
 
         </RelativeLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
-</LinearLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/headerKnowledge">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvKnowledge"
+                style="@style/CardViewCustom.Select">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvTitleKnowledge"
+                        style="@style/TextViewItem.white"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_red2"
+                        android:paddingVertical="16dp"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="48dp"
+                        android:text="Pengertian Bunga Mawar"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textStyle="italic|bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivArrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_arrow_right_24"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvTitleKnowledge"
+                        app:layout_constraintEnd_toEndOf="@+id/tvTitleKnowledge"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/expandableLayout"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitleKnowledge">
+
+                        <TextView
+                            android:id="@+id/tvContentKnowledge"
+                            style="@style/TextViewItem.black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="24dp"
+                            android:paddingVertical="16dp"
+                            android:text="@string/rose_definition"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvKnowledge2"
+                style="@style/CardViewCustom.Select">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvTitleKnowledge2"
+                        style="@style/TextViewItem.white"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/color_red2"
+                        android:paddingVertical="16dp"
+                        android:paddingStart="24dp"
+                        android:paddingEnd="48dp"
+                        android:text="Ciri-ciri Bunga Mawar"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textStyle="italic|bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/ivArrow2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_arrow_right_24"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvTitleKnowledge2"
+                        app:layout_constraintEnd_toEndOf="@+id/tvTitleKnowledge2"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <LinearLayout
+                        android:id="@+id/expandableLayout2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tvTitleKnowledge2">
+
+                        <TextView
+                            android:id="@+id/tvContentKnowledge2"
+                            style="@style/TextViewItem.black"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="24dp"
+                            android:paddingVertical="16dp"
+                            android:text="@string/characteristics_roses"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
