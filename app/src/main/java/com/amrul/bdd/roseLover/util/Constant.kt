@@ -6,4 +6,6 @@ object Constant {
     const val ROSE_COLOR = "rose_color"
     const val ROSE_IMAGE = "rose_image"
     const val ROSE_ITEM = "rose_item"
+    const val MUST_BE_FIELD = "*Harus diisi"
+    const val USERNAME_LOGIN = "username_login"
 }

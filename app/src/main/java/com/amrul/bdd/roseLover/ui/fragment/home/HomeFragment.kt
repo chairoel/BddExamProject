@@ -40,9 +40,7 @@ class HomeFragment : Fragment() {
     private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
         val homeViewModel = ViewModelProvider(this)[HomeViewModel::class.java]
 
@@ -68,10 +66,10 @@ class HomeFragment : Fragment() {
         super.onResume()
         setAppBar()
     }
+
     @SuppressLint("SimpleDateFormat")
     private fun setAppBar() {
-        val nameProfile = activity?.intent?.getStringExtra("HA")
-//        val nameProfile: String = "Chairul Amri"
+        val nameProfile = activity?.intent?.getStringExtra(Constant.USERNAME_LOGIN)
         if (nameProfile != null) {
             tvProfileName.text = String.format("Hello, %s!", Util.toCamelCase(nameProfile))
         } else {
@@ -100,11 +98,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun showSelectedHero(rose: Rose) {
-//        Toast.makeText(context, "Kamu memilih " + rose.name, Toast.LENGTH_SHORT).show()
         val detailIntent = Intent(context, DetailRoseActivity::class.java)
-//        detailIntent.putExtra(Constant.ROSE_NAME, rose.name)
-//        detailIntent.putExtra(Constant.ROSE_DETAIL, rose.detail)
-//        detailIntent.putExtra(Constant.ROSE_COLOR, rose.color)
         detailIntent.putExtra(Constant.ROSE_ITEM, rose)
         startActivity(detailIntent)
     }
