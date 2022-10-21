@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".ui.activity.ProfileActivity">
 
     <include
@@ -11,5 +12,319 @@
         layout="@layout/custom_app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/appBarRoseProfile">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/ivProfile"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/black_color"
+                android:scaleType="centerCrop"
+                tools:src="@tools:sample/avatars" />
+
+            <TextView
+                android:id="@+id/tvBioDataLabel"
+                style="@style/TextViewItem.black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_top_margin_8dp"
+                android:paddingHorizontal="@dimen/activity_padding_12dp"
+                android:text="@string/bio_data"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/clBioData"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingHorizontal="@dimen/activity_horizontal_margin">
+
+                <TextView
+                    android:id="@+id/tvNameLabel"
+                    style="@style/TextViewItem.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/full_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvPlaceBirthLabel"
+                    style="@style/TextViewItem.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_4dp"
+                    android:text="@string/place_birth"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+                <TextView
+                    android:id="@+id/tvDateBirthLabel"
+                    style="@style/TextViewItem.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_4dp"
+                    android:text="@string/date_birth"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvPlaceBirth" />
+
+                <TextView
+                    android:id="@+id/tvGenderLabel"
+                    style="@style/TextViewItem.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_4dp"
+                    android:text="@string/gender"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvDateBirth" />
+
+                <TextView
+                    android:id="@+id/tvAddressLabel"
+                    style="@style/TextViewItem.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_4dp"
+                    android:text="@string/address"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvGender" />
+
+                <TextView
+                    android:id="@+id/tvEducationLabel"
+                    style="@style/TextViewItem.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_4dp"
+                    android:text="@string/education"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvAddress" />
+
+                <TextView
+                    android:id="@+id/tvEmailLabel"
+                    style="@style/TextViewItem.black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_margin_4dp"
+                    android:text="@string/email"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvEducation" />
+
+                <TextView
+                    android:id="@+id/colon"
+                    style="@style/TextViewItem.gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_margin_4dp"
+                    android:text="@string/colon"
+                    app:layout_constraintStart_toEndOf="@+id/tvNameLabel"
+                    app:layout_constraintTop_toTopOf="@+id/tvNameLabel" />
+
+                <TextView
+                    android:id="@+id/colon2"
+                    style="@style/TextViewItem.gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/colon"
+                    app:layout_constraintStart_toStartOf="@+id/colon"
+                    app:layout_constraintTop_toTopOf="@+id/tvPlaceBirthLabel" />
+
+                <TextView
+                    android:id="@+id/colon3"
+                    style="@style/TextViewItem.gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/colon"
+                    app:layout_constraintStart_toStartOf="@+id/colon"
+                    app:layout_constraintTop_toTopOf="@+id/tvDateBirthLabel" />
+
+                <TextView
+                    android:id="@+id/colon4"
+                    style="@style/TextViewItem.gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/colon"
+                    app:layout_constraintStart_toStartOf="@+id/colon"
+                    app:layout_constraintTop_toTopOf="@+id/tvGenderLabel" />
+
+                <TextView
+                    android:id="@+id/colon5"
+                    style="@style/TextViewItem.gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/colon"
+                    app:layout_constraintStart_toStartOf="@+id/colon"
+                    app:layout_constraintTop_toTopOf="@+id/tvAddressLabel" />
+
+                <TextView
+                    android:id="@+id/colon6"
+                    style="@style/TextViewItem.gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/colon"
+                    app:layout_constraintStart_toStartOf="@+id/colon"
+                    app:layout_constraintTop_toTopOf="@+id/tvEducationLabel" />
+
+                <TextView
+                    android:id="@+id/colon7"
+                    style="@style/TextViewItem.gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/colon"
+                    app:layout_constraintStart_toStartOf="@+id/colon"
+                    app:layout_constraintTop_toTopOf="@+id/tvEmailLabel" />
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/TextViewItem.red.dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_margin_4dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/colon2"
+                    app:layout_constraintTop_toTopOf="@+id/tvNameLabel"
+                    tools:text="@string/full_name_data" />
+
+                <TextView
+                    android:id="@+id/tvPlaceBirth"
+                    style="@style/TextViewItem.red.dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_margin_4dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/colon2"
+                    app:layout_constraintTop_toTopOf="@+id/tvPlaceBirthLabel"
+                    tools:text="@string/place_birth_data" />
+
+                <TextView
+                    android:id="@+id/tvDateBirth"
+                    style="@style/TextViewItem.red.dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_margin_4dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tvName"
+                    app:layout_constraintStart_toEndOf="@+id/colon2"
+                    app:layout_constraintTop_toTopOf="@+id/tvDateBirthLabel"
+                    tools:text="@string/date_birth_data" />
+
+                <TextView
+                    android:id="@+id/tvGender"
+                    style="@style/TextViewItem.red.dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_margin_4dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tvName"
+                    app:layout_constraintStart_toEndOf="@+id/colon2"
+                    app:layout_constraintTop_toTopOf="@+id/tvGenderLabel"
+                    tools:text="@string/gender_data" />
+
+                <TextView
+                    android:id="@+id/tvAddress"
+                    style="@style/TextViewItem.red.dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_margin_4dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tvName"
+                    app:layout_constraintStart_toEndOf="@+id/colon2"
+                    app:layout_constraintTop_toTopOf="@+id/tvAddressLabel"
+                    tools:text="@string/address_data" />
+
+                <TextView
+                    android:id="@+id/tvEducation"
+                    style="@style/TextViewItem.red.dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_margin_4dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tvName"
+                    app:layout_constraintStart_toEndOf="@+id/colon2"
+                    app:layout_constraintTop_toTopOf="@+id/tvEducationLabel"
+                    tools:text="@string/education_data" />
+
+                <TextView
+                    android:id="@+id/tvEmail"
+                    style="@style/TextViewItem.red.dark"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/activity_margin_4dp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="@+id/tvName"
+                    app:layout_constraintStart_toEndOf="@+id/colon2"
+                    app:layout_constraintTop_toTopOf="@+id/tvEmailLabel"
+                    tools:text="@string/email_data" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/dividingLine"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="@dimen/activity_top_margin_8dp"
+                android:background="@color/line_grey2"
+                tools:layout_editor_absoluteX="16dp" />
+
+            <TextView
+                android:id="@+id/tvSocialMediaLabel"
+                style="@style/TextViewItem.black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_top_margin_8dp"
+                android:paddingHorizontal="@dimen/activity_padding_12dp"
+                android:text="@string/social_media"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/activity_bottom_margin_32dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnSosMed1"
+                    style="@style/Button.OutlinedButton.IconOnly"
+                    android:layout_gravity="top"
+                    android:layout_marginEnd="@dimen/activity_end_margin"
+                    android:layout_marginBottom="@dimen/activity_margin_8dp"
+                    app:icon="@drawable/github_icon" />
+
+                <Button
+                    android:id="@+id/btnSosMed2"
+                    style="@style/Button.OutlinedButton.IconOnly"
+                    android:layout_gravity="top"
+                    android:layout_marginEnd="@dimen/activity_end_margin"
+                    android:layout_marginBottom="@dimen/activity_margin_8dp"
+                    app:icon="@drawable/discord_icon" />
+
+                <Button
+                    android:id="@+id/btnSosMed3"
+                    style="@style/Button.OutlinedButton.IconOnly"
+                    android:layout_gravity="top"
+                    android:layout_marginEnd="@dimen/activity_end_margin"
+                    android:layout_marginBottom="@dimen/activity_margin_8dp"
+                    app:icon="@drawable/linkedin_icon" />
+
+                <Button
+                    android:id="@+id/btnSosMed4"
+                    style="@style/Button.OutlinedButton.IconOnly"
+                    android:layout_gravity="top"
+                    android:layout_marginBottom="@dimen/activity_margin_8dp"
+                    app:icon="@drawable/ig_icon" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
 
 </RelativeLayout>
