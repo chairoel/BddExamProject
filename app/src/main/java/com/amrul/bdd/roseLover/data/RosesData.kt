@@ -108,7 +108,7 @@ object RosesData {
         "Putih"
     )
 
-    private val heroesImages = intArrayOf(
+    private val roseImages = intArrayOf(
         R.drawable.mawar_merah,
         R.drawable.mawar_kuning,
         R.drawable.mawar_pink,
@@ -147,12 +147,12 @@ object RosesData {
         get() {
             val list = arrayListOf<Rose>()
             for (position in roseNames.indices) {
-                val hero = Rose()
-                hero.name = roseNames[position]
-                hero.detail = roseDetails[position]
-                hero.color = roseColors[position]
-                hero.photo = heroesImages[position]
-                list.add(hero)
+                val rose = Rose()
+                rose.name = roseNames[position]
+                rose.detail = roseDetails[position]
+                rose.color = roseColors[position]
+                rose.photo = roseImages[position]
+                list.add(rose)
             }
             return list
         }
