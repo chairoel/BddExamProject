@@ -1,5 +1,7 @@
 package com.amrul.bdd.roseLover.ui.fragment.knowledge
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.transition.AutoTransition
 import android.transition.TransitionManager
@@ -48,6 +50,17 @@ class KnowledgeFragment : Fragment() {
 
         binding.tvTitleKnowledge2.setOnClickListener {
             expandedView(binding.expandableLayout2, binding.cvKnowledge2, binding.ivArrow2)
+        }
+
+        binding.tvTitleKnowledge3.setOnClickListener {
+            expandedView(binding.expandableLayout3, binding.cvKnowledge3, binding.ivArrow3)
+        }
+
+        binding.expandableLayout3.setOnClickListener {
+            val url = "https://santaidamai.com/jenis-bunga-mawar/"
+            val uriUrl: Uri = Uri.parse(url)
+            val launchBrowser = Intent(Intent.ACTION_VIEW, uriUrl)
+            startActivity(launchBrowser)
         }
 
         return root
