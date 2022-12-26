@@ -1,5 +1,6 @@
 package com.amrul.bdd.roseLover.adapter
 
+import android.annotation.SuppressLint
 import android.app.Activity
 import android.content.Context
 import android.view.LayoutInflater
@@ -26,10 +27,9 @@ class ListRoseAdapter(
         this.onItemClickCallback = onItemClickCallback
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListViewHolder {
-        val view: View = LayoutInflater.from(parent.context).inflate(R.layout.item_row_rose, parent, false)
-        return ListViewHolder(view)
-    }
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) = ListViewHolder(
+        LayoutInflater.from(parent.context).inflate(R.layout.item_row_rose, parent, false)
+    )
 
     override fun onBindViewHolder(holder: ListViewHolder, position: Int) {
         val rose = listRose[position]
@@ -41,6 +41,11 @@ class ListRoseAdapter(
 
         holder.itemView.setOnClickListener {
             onItemClickCallback.onItemClicked(listRose[position])
+        }
+
+        holder.itemView.setOnLongClickListener {
+            onItemClickCallback.onItemLongClicked(listRose[position])
+            return@setOnLongClickListener true
         }
 
         holder.nameRose.text = rose.name
@@ -64,6 +69,7 @@ class ListRoseAdapter(
         return listRose
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     fun setItems(list: List<Rose>) {
         listRose = list as ArrayList<Rose>
         notifyDataSetChanged()

@@ -88,6 +88,10 @@ class HomeFragment : Fragment() {
             override fun onItemClicked(data: Rose) {
                 showSelectedHero(data)
             }
+
+            override fun onItemLongClicked(data: Rose) {
+                Toast.makeText(context, "nama: ${data.name}", Toast.LENGTH_SHORT).show()
+            }
         })
     }
 
